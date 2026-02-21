@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Imagens</title>
+    <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Desafios Da Imagens</h1>
+
+   <picture>
+    <!-- Tela bem pequena -->
+    <source media="(max-width: 50px)" srcset="/imagens/github-pp.png" type="image/png">
+
+    <!-- Pequena -->
+    <source media="(max-width: 150px)" srcset="/imagens/github-p.png" type="image/png">
+
+    <!-- Média -->
+    <source media="(max-width: 200px)" srcset="/imagens/github-m.png" type="image/png">
+
+    <!-- Grande -->
+    <source media="(max-width: 500px)" srcset="/imagens/github-g.png" type="image/png">
+
+    <!-- Padrão (caso nada acima seja atendido) -->
+    <img src="/imagens/github-gg.png" alt="A imagem do GitHub">
+</picture>
+
+
+</body>
+
+</html>
