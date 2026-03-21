@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela 1</title>
-</head>
-<body>
+    <title>Tabela Escolar</title>
+    <style>
+        h2 {
+            
+            margin: 20px;
+            text-align:calc()
+        }
+        table {
+            border-collapse: collapse;
+            width: 30%;
+            margin: 20px;
+            font-family: Arial;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
     
+        }
+
+        thead
+        {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody th {
+            background-color:white;
+        }
+
+        .mexata{
+            text-align: left;
+            background-color: gray;
+            color: white;
+        }
+        .mexata1{
+            text-align: right;
+            background-color: gray;
+            color: white;
+        }
+        .media{
+            text-align: right;
+            
+        }
+        
+
+      
+        
+    </style>
+</head>
+
+<body>
+    <caption>
+        <h2>Tabela Escolar</h2>
+    </caption>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">ÁREA</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="col" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- EXATAS -->
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <th scope="row">Matemática</th>
+                <td>7</td>
+                <td>6</td>
+                <td class="media">6,5</td>
+            </tr>
+            <tr>
+                <th scope="row">Física</th>
+                <td>8</td>
+                <td>7</td>
+                <td class="media">7,5</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Química</th>
+                <td>5</td>
+                <td>7</td>
+                <td class="media">6</td>
+            </tr>
+            <tr>
+                <th scope="row">Biologia</th>
+                <td>9</td>
+                <td>8</td>
+                <td class="media">8,5</td>
+            </tr>
+
+            <!-- Média Exatas -->
+
+            <tr>
+                <th colspan="4" class="mexata">Média de Exatas</th>
+                <td class="mexata1">7,13</td>
+            </tr>
+
+            <!-- HUMANAS -->
+
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <th scope="row">História</th>
+                <td>8</td>
+                <td>6</td>
+                <td class="media">7</td>
+            </tr>
+            <tr>
+                <th scope="row">Geografia</th>
+                <td>7</td>
+                <td>9</td>
+                <td class="media">8</td>
+            </tr>
+
+            <!-- Média Humanas -->
+
+            <tr>
+                <th colspan="4" class="mexata" >Média de Humanas</th>
+                <td class="mexata1">7,5</td>
+            </tr>
+        </tbody>
+     
+    </table>
 </body>
+
 </html>
