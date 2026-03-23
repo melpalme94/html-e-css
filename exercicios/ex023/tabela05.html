@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">Exercicio De Tabela</title>
-        <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio de Tabelas </title>
+    <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -25,28 +26,71 @@
             border: 1px solid gray;
             padding: 8px;
         }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+        col.cgrupo {
+            background-color: yellow;
+        }
     </style>
 </head>
 
 <body>
-  <h1>Exercicio de Tabela</h1>
-  <table>
-    <caption>Cadastro</caption>
-    <tr>
-        <th scope="col">Nome</th>
-        <th>Sexo</th>
-        <th>Idade</th>
-        <th>Profissão</th>
-    </tr>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
 
-    <tr>
-        <th scope="col">Ana Maria</th>
-        <th>F</th>
-        <th>25</th>
-        <th>Jornalista</th>
-    </tr>
-    
-  </table>
+        <tr>
+            <th>Ana Maria</th>
+            <th>F</th>
+            <th>25</th>
+            <th>Jornalista</th>
+        </tr>
+        <tr>
+            <th>Claudio</th>
+            <th>M</th>
+            <th>28</th>
+            <th>Programador</th>
+        </tr>
+        <tr>
+            <th>Gustavo</th>
+            <th>M</th>
+            <th>42</th>
+            <th>Professor
+        </tr>
+        </tr>
+        <tr>
+            <th>Hélio</th>
+            <th>M</th>
+            <th>19</th>
+            <th>Vendedor</th>
+        </tr>
+        <tr>
+            <th>Maria</th>
+            <th>F</th>
+            <th>39</th>
+            <th>Médica</th>
+        </tr>
+        <tr>
+            <th>Otávio</th>
+            <th>M</th>
+            <th>22</th>
+            <th>Nutricionista</th>
+        </tr>
+
+    </table>
 
 </body>
 
