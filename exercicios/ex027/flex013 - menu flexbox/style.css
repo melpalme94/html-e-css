@@ -50,6 +50,10 @@ header > nav > a {
 
 }
 
+button {
+    display: none;
+}
+
 header > nav > a:hover {
     background-color: white;
     color: black;
